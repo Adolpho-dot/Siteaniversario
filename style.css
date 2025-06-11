@@ -85,8 +85,6 @@ body {
   transform: rotate(5deg);
 }
 
-/* 📱 Responsividade para telas menores */
-  }
 
   .linha-texto-foto,
   .linha-foto-texto {
@@ -115,4 +113,4 @@ body {
   }
   
   
-}
+
