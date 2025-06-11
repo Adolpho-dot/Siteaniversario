@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  background-color: #e5e5e5;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Título com imagem */
+.titulo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.titulo-imagem {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.linha-texto-foto,
+.linha-foto-texto {
+  flex-direction: row;
+}
+
+.texto {
+  flex: 1 1 220px;
+  font-size: 15px;
+  color: #333;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.foto {
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.foto.vertical {
+  width: 140px;
+  height: auto;
+}
+
+
+/* Grade para as últimas 4 fotos */
+.grade-fotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px 20px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.foto.mural {
+  width: 140px;
+  height: auto;
+  object-fit: cover;
+}
+
+.mural1 {
+  transform: rotate(-4deg);
+}
+.mural2 {
+  transform: rotate(3deg);
+}
+.mural3 {
+  transform: rotate(-3deg);
+}
+.mural4 {
+  transform: rotate(5deg);
+}
+
+/* 📱 Responsividade para telas menores */
+@media (max-width: 500px) {
+  .linha {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .linha-texto-foto,
+  .linha-foto-texto {
+    flex-direction: column;
+  }
+
+  .texto {
+    max-width: 50%;
+    font-size: 50px;
+    padding: 0 10px;
+  }
+
+  .foto.vertical {
+    width: 80%;
+    max-width: 240px;
+  }
+
+  .grade-fotos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .foto.mural {
+    width: 80%;
+    max-width: 240px;
+  }
+  
+}
