@@ -118,5 +118,33 @@ body {
     width: 80%;
     max-width: 240px;
   }
+
+  /* Ajustes para mobile */
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .texto {
+    font-size: 16px !important; /* Texto maior */
+    line-height: 1.6;
+    max-width: 100% !important;
+  }
+
+  .foto.vertical, 
+  .foto-poema,
+  .foto.mural {
+    width: 90% !important;
+    max-width: 300px !important;
+  }
+
+  .grade-fotos {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
   
 }
