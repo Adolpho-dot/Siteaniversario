@@ -84,6 +84,7 @@ body {
 .mural4 {
   transform: rotate(5deg);
 }
+
   .linha-texto-foto,
   .linha-foto-texto {
     flex-direction: column;
@@ -136,6 +137,4 @@ body {
     grid-template-columns: 1fr;
     gap: 25px;
   }
-}
-  
 }
