@@ -85,12 +85,6 @@ body {
   transform: rotate(5deg);
 }
 
-
-  .linha-texto-foto,
-  .linha-foto-texto {
-    flex-direction: column;
-  }
-
   .texto {
     max-width: 50%;
     font-size: 20px;
