@@ -33,10 +33,6 @@ body {
   flex-wrap: wrap;
 }
 
-.linha-texto-foto,
-.linha-foto-texto {
-  flex-direction: row;
-}
 
 .texto {
   flex: 1 1 220px;
