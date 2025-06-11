@@ -33,6 +33,10 @@ body {
   flex-wrap: wrap;
 }
 
+.linha-texto-foto,
+.linha-foto-texto {
+  flex-direction: row;
+}
 
 .texto {
   flex: 1 1 220px;
@@ -81,6 +85,19 @@ body {
   transform: rotate(5deg);
 }
 
+/* 📱 Responsividade para telas menores */
+@media (max-width: 500px) {
+  .linha {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .linha-texto-foto,
+  .linha-foto-texto {
+    flex-direction: column;
+  }
+
   .texto {
     max-width: 50%;
     font-size: 20px;
@@ -102,5 +119,4 @@ body {
     max-width: 240px;
   }
   
-  
-
+}
