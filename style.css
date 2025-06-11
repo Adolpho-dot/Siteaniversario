@@ -84,15 +84,6 @@ body {
 .mural4 {
   transform: rotate(5deg);
 }
-
-/* 📱 Responsividade para telas menores */
-@media (max-width: 500px) {
-  .linha {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
   .linha-texto-foto,
   .linha-foto-texto {
     flex-direction: column;
